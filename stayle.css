@@ -3,12 +3,24 @@
 body {
   background-color: rgb(47, 47, 47);
 }
-
+.main-page{
+  width:1850px;
+}
 .preview-img {
     width: 40%;
     margin-left: 50px;
     margin-top: 20px;
 }
+.login-signup {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  padding: 24px;
+  
+}
+
+
 form {
   display: flex;
 }
@@ -34,11 +46,11 @@ input[type="text"] {
 
 .search {
   position: absolute;
-  top: 12%;
+  top: 15%;
   width: 80%;
   text-align: center;
   font-size: 18px;
-  left: 170px;
+  left: 350px;
   padding: 8px 17px;
 }
 .preview-img img {
@@ -87,14 +99,20 @@ p {
 }
 
 .header-menu {
-    display: flex;
+    display: inline-block;
+    margin-left: 350px;
+    height: 100px;
     align-items: flex-start;
     justify-content: space-between;
     padding: 50px 0;
 
   }
   
-
+  ul{
+    margin-top: -30px;
+    gap: 70px;
+    display: flex;
+  }
   li {
     margin-left: 0px;
   }
@@ -109,8 +127,27 @@ p {
   ul li:nth-child(even) {
     margin-right: 10px;
   }
+.image_movie{
 
-
+    width: 200px;
+    height: 300px;
+    margin: 30px 40px;
+    outline: 10px solid rgb(16, 14, 14);
+    border-radius: 6px;
+}
+.image_movie:hover{
+  transition: 0.2s;
+  border: 9px solid rgb(16, 14, 14);
+}
+.movies{
+  display: grid;
+ justify-content: end;
+  grid-template-columns: repeat(var(--columns, 6), 250px);
+  gap: 2rem;
+  justify-content: center;
+  
+  margin-block: 2rem;
+}
 
 
 
